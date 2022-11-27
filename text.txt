@@ -6,3 +6,4 @@
 5. create new file index.js
 6. npm install -g nodemon //// versi golbal 
 7. npm i connect-session-sequelize  // menyimpan session
+8. nodemon index // jalan kan server
