@@ -1,0 +1,67 @@
+// Create Users
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"Riko",
+    "email":"riko@mail.com",
+    "password":"1234",
+    "confPassword":"1234",
+    "role":"user"
+}
+
+
+//Get All User
+###
+GET  http://localhost:5000/users
+
+//Get User By Id
+###
+GET http://localhost:5000/users/21f9d91c-5f78-4d08-8044-978d0b52a303
+
+
+//Update User By Id
+###
+PATCH http://localhost:5000/users/21f9d91c-5f78-4d08-8044-978d0b52a303
+Content-Type: application/json
+
+{
+    "name":"Riko Update sdfds",
+    "email":"riko@mail.com",
+    "password":"",
+    "confPassword":"",
+    "role":"user"
+}
+
+//Delete User
+###
+DELETE   http://localhost:5000/users/c6c8ea65-3800-4c83-b0de-3d0bf14d5928
+
+
+//Login User
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"putri@mail.com",
+    "password":"12345678"
+}
+
+//login admin
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"roby@mail.com",
+    "password":"12345678"
+}
+
+//Cek siapa yang login
+###
+GET  http://localhost:5000/me
+
+//Logout
+###
+DELETE   http://localhost:5000/logout

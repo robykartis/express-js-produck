@@ -1,0 +1,28 @@
+GET  http://localhost:5000/products
+
+//get single produk
+###
+GET  http://localhost:5000/products/33eedfb6-1e04-40d2-89c0-1ce352b3895a
+//Create Produk
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name":"Produk Admin 3",
+    "price":"123456"
+}
+
+//update product
+###
+PATCH  http://localhost:5000/products/2f189064-79d4-4474-a923-14adde66db65
+Content-Type: application/json
+
+{
+    "name":"Produk User 1 Ter Update Oleh User",
+    "price":"123456"
+}
+
+//delete produk
+###
+DELETE   http://localhost:5000/products/a883e4bf-c984-410c-aa50-dab3663ae27b
